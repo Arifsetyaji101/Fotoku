@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #0F2F44;
+
+    .navbar-brand {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+
+    }
+
+    .navbar-nav {
+        .vr {
+            border-left: 2px solid #fff;
+            height: 20px;
+
+            span {
+                color: #fff;
+                margin-left: 10px;
+            }
+        }
+
+        .section-socmed {
+            padding-left: 4px;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                img {
+                    height: 14px;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+        .nav-item {
+            a {
+                &.nav-link {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #fff;
+
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+    }
+
+    .nav-user {
+        img {
+            height: 50px;
+        }
+    }
+
+    .app-search {
+
+        // Main styles
+        form {
+            position: relative;
+            width: 30rem;
+            background: #fff;
+            border-radius: 24px;
+        }
+
+        input,
+        button {
+            font-family: 'Poppins', sans-serif;
+            border: 0;
+        }
+
+        input[type="search"] {
+            outline: 0; // <-- shold probably remove this for better accessibility, adding for demo aesthetics for now.
+            width: 95%;
+            background: var(--color-light);
+            padding: 0 1.6rem;
+            appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+            transition: all var(--dur) var(--bez);
+            transition-property: width, border-radius;
+            z-index: 1;
+            position: relative;
+        }
+
+        button {
+            &.btn-search {
+                display: none; // prevent being able to tab to it
+                position: absolute;
+                height: 25px;
+                top: 0;
+                right: 0;
+                width: 50px;
+                border-radius: 24px;
+                border: 1px solid #fff;
+                background: #0F2F44; //background go
+                color: #fff;
+                z-index: 10;
+                padding: 0;
+            }
+        }
+
+        input:not(:placeholder-shown) {
+            border-radius: 24px;
+
+            +button {
+                display: block;
+            }
+        }
+
+        .btn-scan {
+            height: 25px;
+            width: 25px;
+            background-color: #F5C945;
+            margin-left: 10px;
+            border-radius: 34px;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            img {
+                height: 15px;
+                position: absolute;
+                -webkit-transform: translate(-6px, -1px);
+                transform: translate(-6px, -7px);
+            }
+
+        }
+
+    }
+}
+
+.section-main {
+    background-image: url('../images/bg.jpg');
+    height: 1700px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    .main-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        color: #fff;
+        margin-top: 850px;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+}
+
+.section-second-main {
+    height: 400px;
+    background-color: #0F2F44;
+}
+
+footer {
+    padding-top: 45px;
+    background-color: #DCDCDC;
+
+    .section-brand {
+        margin-top: -10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 54px;
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+    .footer-item {
+
+        h5 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+
+        }
+
+        .footer-list {
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+
+            a {
+                color: #000 !important;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .btn-to-top {
+        button {
+            background-color: #F5C945;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            border-radius: 24px;
+        }
+    }
+}
