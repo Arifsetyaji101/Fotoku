@@ -191,6 +191,7 @@ body {
     bottom: 50%;
     left: 0;
     right: 0;
+
     .roles__inner {
 
         .brand {
@@ -246,6 +247,19 @@ body {
             }
         }
     }
+}
+
+
+// dashboard photographer
+
+.section__header {
+    height: 326px;
+    background-color: #0F2F44;
+}
+
+.section__main__content {
+    background-color: #FFFFFF;
+    height: 100%;
 }
 
 //footer

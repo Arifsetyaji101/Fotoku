@@ -230,6 +230,16 @@ body {
   color: #F5C945;
 }
 
+.section__header {
+  height: 326px;
+  background-color: #0F2F44;
+}
+
+.section__main__content {
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
 footer {
   padding-top: 45px;
   background-color: #DCDCDC;
